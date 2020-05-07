@@ -17,4 +17,6 @@ class Appointment < ApplicationRecord
   def patient_name 
     self.patient ? self.patient.name : nil
   end
+
+  
 end
