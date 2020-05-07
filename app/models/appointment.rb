@@ -18,5 +18,8 @@ class Appointment < ApplicationRecord
     self.patient ? self.patient.name : nil
   end
 
+  def timeslot
+    appointment_datetime.strftime('%B %d, %Y at %k:%M')
+  end
   
 end
