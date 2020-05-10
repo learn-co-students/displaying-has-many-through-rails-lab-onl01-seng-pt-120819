@@ -1,0 +1,4 @@
+<% @doctor.each do |app| %>
+     <%= link_to  app.name, app_path(app) %>
+     <%= app.patients.count%>
+     <%end%>
