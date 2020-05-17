@@ -1,0 +1,5 @@
+<% @appointment.doctor_name %>
+
+<%= @appointment.timeslot %>
+<%= link_to @appointment.patient_name , patient_path(@appointment.patient_id) %>
+<%= link_to @appointment.doctor_name , doctor_path(@appointment.doctor_id) %>
